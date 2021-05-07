@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch!</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="head">
+        <h1 class="animation">Do you want to sketch?</h1>
+    </div>
+
+    <div class="main_content">
+
+        <div class="selections" id="palette">
+
+            <h2 class="selection">Pick a color!</h2>
+            <div class="flex">
+                <div class="types_of_colors">
+                    <button class="color_type" id="black">Black</button>
+                    <button class="color_type" id="random">Random</button>
+                    <button class="color_type" id="your_choice">
+                        Pick a Color! 
+                        <input type="color" value="#ff0000" id="input-color">
+                    </button>
+                    <button class="color_type" id="eraser">Eraser</button>
+                </div>
+    
+                <div>
+                    <h2 class="clear_everything">Want to restart?</h2>
+                    <button id="clear">Clear the Pad!!</button>
+
+                    <h4 class="resize">Create the grid and don't forget to clear the pad everytime you change the grid</h4>
+                    <button id="resize">Create the Grid</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="sketch_pad">
+            <div class="pad" id="sketch">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
